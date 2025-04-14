@@ -192,7 +192,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 ### Tree-Based Regression Results
 
-| Model Description        | Baseline (Train/Test RMSE) | Detrended Wage (Train/Test) | Hyperparameter Tuning (Train/Test) |
+| Model         | Baseline (Train/Test RMSE) | Detrended Wage (Train/Test) | Hyperparameter Tuning (Train/Test) |
 |--------------------------|-----------------|-------------|------------|
 | Decision Tree            | 30,860.31 / 30,806.11      | 28,571.5 / 28604.1   | 27,422.98 / 27,806.1708  |
 | Random Forest            | 30,739.24 / 30,680.9      | 28,434.47 / 28,468.69   | 27,677.8554 / 27,717.0163  |
@@ -210,10 +210,6 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - `maxDepth`: [5, 10]  
 - `maxIter`: [20, 50]  
 
-##### Conclusion
-
-Gradient-boosted Tree (`maxDepth = 10`, `numTrees = 50`) achieved the best predictive performance with a **Testing RMSE of 27,041**, indicating its strong ability to capture complex wage patterns.
-
 ---
 
 - Accuracy nearly doubled from the original (16%) baseline.
@@ -221,9 +217,9 @@ Gradient-boosted Tree (`maxDepth = 10`, `numTrees = 50`) achieved the best predi
 
 ---
 
-## Multinomial Logistic Regression Results
+### Multinomial Logistic Regression Results
 
-### Baseline Performance (Original Wages)
+#### Baseline Performance (Original Wages)
 
 | Model                           | Accuracy (Test) |
 |--------------------------------|------------------|
@@ -231,7 +227,7 @@ Gradient-boosted Tree (`maxDepth = 10`, `numTrees = 50`) achieved the best predi
 | Decision Tree                   | 16%              |
 | Random Forest                   | 15%              |
 
-### Improved Classification Performance
+#### Improved Classification Performance
 
 | Model Description                     | Accuracy (Test) |
 |--------------------------------------|------------------|
@@ -239,11 +235,30 @@ Gradient-boosted Tree (`maxDepth = 10`, `numTrees = 50`) achieved the best predi
 | + ZIP Code                            | **37.59%**       |
 | + Hyperparameter Tuning               | 36.31%           |
 
-### Tuning Parameters
+#### Tuning Parameters
 
 - `regParam`: [0.01, 0.1]  
 - `elasticNetParam`: [0.0, 1.0]  
 - `maxIter`: [50, 100]
+
+### Tree-Based Classification Results
+
+| Model         | Baseline (Train/Test Accuracy) | Detrended Wage (Train/Test) | Hyperparameter Tuning (Train/Test) |
+|--------------------------|-----------------|-------------|------------|
+| Decision Tree            | 0.16 / 0.16      | 0.29 / 0.29   | 0.3119 / 0.311  |
+| Random Forest            | 0.15 / 0.15      | 0.28 / 0.28   | 0.3023 / 0.302  |
+
+#### Tuning Parameters
+##### Decision Tree Regressor 
+- `maxDepth`: [5, 10]  
+
+##### Random Forest Regressor
+- `maxDepth`: [5, 10]  
+- `numTrees`: [20, 50]  
+
+##### Gradient-Boosted Tree Regressor 
+- `maxDepth`: [5, 10]  
+- `maxIter`: [20, 50]  
 
 ---
 
