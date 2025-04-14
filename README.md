@@ -61,7 +61,7 @@ The task involves both **regression** (predicting numeric wages) and **classific
 
 ## Approach and Setup
 
-### Timeline / Deliverables
+## Timeline / Deliverables
 
 ### ✅ Milestone 1: Project Plan & Data Understanding
 - Outlined project goals, tasks, and evaluation metrics  
@@ -92,13 +92,13 @@ The task involves both **regression** (predicting numeric wages) and **classific
 
 ---
 
-### Resources
+## Resources
 
 - PySpark MLlib documentation for scalable pipelines  
 - ANOVA and IQR theory for outlier detection and variance analysis  
 - GitHub and Jupyter notebooks for version control and experimentation  
 
-### How to Contribute
+## How to Contribute
 
 - Fork the repo  
 - Create a feature or bugfix branch  
@@ -212,23 +212,23 @@ pip install -r requirements.txt
 
 ## Final Reflections
 
-### 📌 Feature Engineering Matters
+### Feature Engineering Matters
 - **Detrending and normalization of wages** helped reduce inflation noise and made salaries comparable across years.  
 - **Normalizing detrended wages** led to a substantial improvement in regression performance.  
 - **Categorical mapping** (e.g., `Job_Group`) and **location encoding** (ZIP, city, county, state) added meaningful signal to the models.
 
-### 📍 Location Granularity
+### Location Granularity
 - **ZIP code** consistently outperformed broader geographic identifiers like city, county, or state in both regression and classification tasks.  
 - This granularity helped models better capture regional wage variations.
 
-### 🔧 Model Performance & Tuning
+### Model Performance & Tuning
 - **Tree-based models** (especially Gradient-Boosted Trees) showed strong performance on detrended wage regression.  
 - **Hyperparameter tuning** helped reduce overfitting and increased generalization across all model types.
 
-### 🎯 Key Takeaways
-- ✅ **Linear Regression** using **normalized detrended wages + ZIP code** achieved the best performance in regression (R² = 0.330).  
-- ✅ **Multinomial Logistic Regression** outperformed all tree-based classifiers, achieving the **highest classification accuracy of 37.59%**.  
-- ✅ The combination of **normalized detrended wages** and **ZIP code granularity** was the most effective feature set across tasks.
+### Key Takeaways
+- **Linear Regression** using **normalized detrended wages + ZIP code** achieved the best performance in regression (R² = 0.330).  
+- **Multinomial Logistic Regression** outperformed all tree-based classifiers, achieving the **highest classification accuracy of 37.59%**.  
+- The combination of **normalized detrended wages** and **ZIP code granularity** was the most effective feature set across tasks.
 
 ---
 
