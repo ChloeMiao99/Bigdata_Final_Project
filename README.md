@@ -196,7 +196,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 |--------------------------|-----------------|-------------|------------|
 | Decision Tree            | 30,860.31 / 30,806.11      | 28,571.5 / 28604.1   | 27,422.98 / 27,806.1708  |
 | Random Forest            | 30,739.24 / 30,680.9      | 28,434.47 / 28,468.69   | 27,677.8554 / 27,717.0163  |
-| Gradient-Boosted Trees   | 29,803.27 / 29,763.33     | 27,576.2 / 27,611.71   | 26,960.2027 / 27,041.1945  |
+| Gradient-Boosted Trees   | 29,803.27 / 29,763.33     | 27,576.2 / 27,611.71   | **26,960.2027** / **27,041.1945**  |
 
 #### Tuning Parameters
 ##### Decision Tree Regressor 
