@@ -275,7 +275,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - The combination of **normalized detrended wages** and **ZIP code granularity** was the most effective feature set across tasks.
 
 ### Successes
-- For predicting wage, we dropped RMSE from $30806.11(baseline) to $5198.04(best performance model). We dropped MAE from $27422.98(baseline) to $4015.91(best performance model).
+- For predicting wage, we dropped RMSE from $30806.11 (baseline) to $5198.04 (best performance model). We dropped MAE from $27422.98 (baseline) to $4015.91 (best performance model).
 
 
 
