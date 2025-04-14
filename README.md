@@ -258,7 +258,6 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - **Best parameters**: `maxDepth = 10`, `numTrees = 50`
 
 
----
 
 ## Final Reflections
 
