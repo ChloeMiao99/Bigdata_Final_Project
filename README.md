@@ -8,7 +8,7 @@ This project applies multiple machine learning techniques—including linear reg
 
 Ultimately, these models can help inform data-driven decision-making for various stakeholders. Accurate wage predictions support regulatory compliance, allow international job seekers to benchmark job offers more effectively and align career planning with realistic salary expectations.
 
----
+
 
 ## Problem Statement
 
@@ -17,7 +17,7 @@ The central challenge of this project is to build predictive models for H-1B wag
 Another major hurdle is the presence of **high-cardinality features**, such as thousands of unique job titles and geographic identifiers. These can lead to sparse representations and overfitting if not handled properly. Addressing these issues requires thoughtful feature engineering, normalization strategies, and robust model selection.
 
 
----
+
 
 
 ## Data Source
@@ -74,8 +74,6 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 
 
----
-
 
 ## Repository Structure
 
@@ -86,7 +84,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 └── README.md              # Project documentation
 ```
 
----
+
 
 ## Approach and Setup
 
@@ -98,14 +96,14 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - Found **ZIP code** to be the strongest location feature  
 - Encoded categoricals with **StringIndexer** and **OneHotEncoder**
 
----
+
 
 #### Data Splitting & Setup
 - Split into **80% training / 20% test** sets  
 - Ensured no data leakage during preprocessing  
 - Used **PySpark MLlib** for pipeline integration
 
----
+
 
 ### Model Development
 
@@ -121,14 +119,14 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 #### Gradient Boosted
 - Predicted exact wages
   
----
+
 
 ### Optimization & Evaluation
 - Tuned models via **grid search + cross-validation**  
 - Evaluated with **R²**, **RMSE**, **MAE** for regression; **Accuracy** for classification  
 - Compared performance across models and feature sets
 
----
+
 
 ## Timeline / Deliverables
 
@@ -140,7 +138,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - Defined train/validation/test split strategy to avoid data leakage  
 - **Deliverables**: Data dictionary, planning notebook, team credit assignment plan
 
----
+
 
 ### Milestone 2: EDA & Baseline Modeling
 - Completed full-scale EDA and handled missing values  
@@ -150,7 +148,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - Reported model evaluation metrics on training and test sets  
 - **Deliverables**: Project notebook, 3-minute milestone presentation
 
----
+
 
 ### Milestone 3: Feature Engineering & Tuning
 - Engineered key features: `WAGE_DETRENDED`, `WAGE_BUCKET`, and ZIP-based location attributes  
@@ -159,7 +157,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - Evaluated generalization performance and addressed overfitting concerns  
 - **Deliverables**: Updated modeling notebook, model performance tables
 
----
+
 
 ## Resources
 
@@ -167,7 +165,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - ANOVA and IQR theory for outlier detection and variance analysis  
 - GitHub and Jupyter notebooks for version control and experimentation  
 
----
+
 
 ## How to Contribute
 
@@ -175,7 +173,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - Create a feature or bugfix branch  
 - Submit a pull request with description and comments  
 
----
+
 
 ## Sample outputs
 
@@ -217,7 +215,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - **Best parameters**: `maxDepth = 10`, `maxIter = 50`  
 ![image](https://github.com/user-attachments/assets/f0bd1ece-0c33-4a34-9ced-3518bd281a7a)
 
----
+
 ## Classification Task
 ### Multinomial Logistic Regression Results
 #### Baseline Performance (Original Wages)
