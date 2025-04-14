@@ -123,6 +123,22 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - Evaluated with **R²**, **RMSE**, **MAE** for regression; **Accuracy** for classification  
 - Compared performance across models and feature sets
 
+### Setup
+
+To replicate our work, simply upload the provided notebooks to **Google Colab** and run them as-is. The environment is preconfigured for PySpark operations.
+
+Below is the setup code used to initialize a Spark session with optimized memory settings:
+
+```python
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+    .appName("LinearRegression") \
+    .master("local[*]") \
+    .config("spark.executor.memory", "16g") \
+    .config("spark.driver.memory", "16g") \
+    .getOrCreate()
+```
 
 ## Timeline / Deliverables
 
