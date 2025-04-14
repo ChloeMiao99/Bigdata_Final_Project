@@ -25,18 +25,26 @@ The task involves both **regression** (predicting numeric wages) and **classific
 
 ---
 
+
 ## Data Source
 
-- **Dataset**: [H-1B LCA Disclosure Data 2020–2024 (Kaggle)](https://www.kaggle.com/datasets/zongaobian/h1b-lca-disclosure-data-2020-2024)
-- **Target Variable**: `WAGE_RATE_OF_PAY_FROM`
+- **Dataset**: [H-1B LCA Disclosure Data 2020–2024 (Kaggle)](https://www.kaggle.com/datasets/zongaobian/h1b-lca-disclosure-data-2020-2024)  
+- **Target Variable**: `WAGE_RATE_OF_PAY_FROM`  
 - **Engineered Features**:
   - `WAGE_DETRENDED`: Inflation-adjusted wages normalized to 2019  
-  - `WAGE_BUCKET`: Binned version for classification  
-  - `Job_Group`: Aggregated SOC titles  
-  - `yrs_of_experience`: Derived from job duration  
-  - `YEAR`, `ZIP`, and other geographic features  
+  - `WAGE_BUCKET`: Binned version for classification tasks  
+  - `Job_Group`: Aggregated SOC titles based on keyword clustering  
+  - `yrs_of_experience`: Derived from `END_DATE - BEGIN_DATE`
+  - `YEAR` (derived from `RECEIVED_DATE`)
+  - Geographic features:
+    - `WORKSITE_STATE`
+    - `WORKSITE_COUNTY`
+    - `WORKSITE_CITY`
+    - `WORKSITE_POSTAL_CODE` (ZIP)
+
 
 ---
+
 
 ## Repository Structure
 
