@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The H-1B visa program plays a vital role in enabling highly skilled international professionals to work in the United States, particularly in fields such as technology, healthcare, engineering, and finance. U.S. employers file Labor Condition Applications (LCAs) as part of the H-1B process to attest that they will pay foreign workers fair wages comparable to those paid to U.S. employees. Given the program’s competitive nature and the significant number of applications filed each year, analyzing wage trends and job demand patterns has both practical and policy implications.
+The H-1B visa program plays a vital role in enabling highly skilled international professionals to work in the United States, particularly in fields such as technology, healthcare, engineering, and finance. U.S. employers file Labor Condition Applications (LCAs) as part of the H-1B process to attest that they will pay foreign workers fair wages comparable to those paid to U.S. employees. Given the program’s competitive nature and the significant number of applications filed each year, predicting wage has both practical and policy implications.
 
 This project applies multiple machine learning techniques—including linear regression, logistic regression, and tree-based models—to predict wages for H-1B-eligible positions. Two main tasks are addressed: (1) **regression**, to predict exact wage values for each application, and (2) **classification**, to group wages into defined salary buckets for comparative analysis. By leveraging a comprehensive dataset of LCA filings from 2020 to 2024, the project aims to uncover patterns in salary levels across job categories, geographic regions, and years of experience.
 
