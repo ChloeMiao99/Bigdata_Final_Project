@@ -183,13 +183,28 @@ pip install -r requirements.txt
 
 ---
 
+
 ## Final Reflections
 
-- **Feature engineering**—especially wage detrending, categorical mapping, and geographic enrichment—was crucial to improving both regression and classification models.
-- **ZIP code** was the most valuable location-based feature, clearly outperforming state, county, and city granularity.
-- **Tree models**, particularly GBT and fine-tuned Decision Trees, demonstrated robust performance after detrending.
-- **Hyperparameter tuning** enhanced stability and reduced overfitting, supporting model reliability for deployment.
-- **Multinomial Logistic Regression** consistently outperformed tree classifiers for wage bucket prediction.
+### 📌 Feature Engineering Matters
+- **Detrending and normalization of wages** helped reduce inflation noise and made salaries comparable across years.  
+- **Normalizing detrended wages** led to a substantial improvement in regression performance.  
+- **Categorical mapping** (e.g., `Job_Group`) and **location encoding** (ZIP, city, county, state) added meaningful signal to the models.
+
+### 📍 Location Granularity
+- **ZIP code** consistently outperformed broader geographic identifiers like city, county, or state in both regression and classification tasks.  
+- This granularity helped models better capture regional wage variations.
+
+### 🔧 Model Performance & Tuning
+- **Tree-based models** (especially Gradient-Boosted Trees) showed strong performance on detrended wage regression.  
+- **Hyperparameter tuning** helped reduce overfitting and increased generalization across all model types.
+
+### 🎯 Key Takeaways
+- ✅ **Linear Regression** using **normalized detrended wages + ZIP code** achieved the best performance in regression (R² = 0.330).  
+- ✅ **Multinomial Logistic Regression** outperformed all tree-based classifiers, achieving the **highest classification accuracy of 37.59%**.  
+- ✅ The combination of **normalized detrended wages** and **ZIP code granularity** was the most effective feature set across tasks.
 
 ---
+
+
 
