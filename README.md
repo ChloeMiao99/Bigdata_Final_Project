@@ -200,20 +200,18 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 #### Tuning Parameters
 ##### Decision Tree Regressor 
-- `maxDepth`: [5, 10]  
+- `maxDepth`: [5, 10]
+- **Best parameters**: `maxDepth = 10`  
 
 ##### Random Forest Regressor
 - `maxDepth`: [5, 10]  
-- `numTrees`: [20, 50]  
+- `numTrees`: [20, 50]
+- **Best parameters**: `maxDepth = 10`, `numTrees = 50`  
 
 ##### Gradient-Boosted Tree Regressor 
 - `maxDepth`: [5, 10]  
 - `maxIter`: [20, 50]  
-
----
-
-- Accuracy nearly doubled from the original (16%) baseline.
-- The tuned model captured better decision boundaries and improved generalization.
+- **Best parameters**: `maxDepth = 10`, `numTrees = 50`  
 
 ---
 
@@ -248,7 +246,8 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 #### Tuning Parameters
 ##### Decision Tree Regressor 
-- `maxDepth`: [5, 10]  
+- `maxDepth`: [5, 10]
+- **Best parameters**: `maxDepth = 10`
 
 ##### Random Forest Regressor
 - `maxDepth`: [5, 10]  
@@ -257,6 +256,12 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 ##### Gradient-Boosted Tree Regressor 
 - `maxDepth`: [5, 10]  
 - `maxIter`: [20, 50]  
+
+---
+
+- Accuracy nearly doubled from the original (16%) baseline.
+- The tuned model captured better decision boundaries and improved generalization.
+
 
 ---
 
