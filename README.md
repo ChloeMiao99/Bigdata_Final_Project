@@ -2,28 +2,21 @@
 
 ## Project Overview
 
-This project leverages multiple machine learning techniques—including linear regression, logistic regression, and tree-based models—to analyze wage patterns for H-1B visa-eligible positions in the U.S. It addresses two core predictive tasks:
+The H-1B visa program plays a vital role in enabling highly skilled international professionals to work in the United States, particularly in fields such as technology, healthcare, engineering, and finance. U.S. employers file Labor Condition Applications (LCAs) as part of the H-1B process to attest that they will pay foreign workers fair wages comparable to those paid to U.S. employees. Given the program’s competitive nature and the significant number of applications filed each year, analyzing wage trends and job demand patterns has both practical and policy implications.
 
-- **Regression**: Predict the exact wage (`WAGE_RATE_OF_PAY_FROM`) for each LCA application  
-- **Classification**: Categorize wages into defined salary buckets for classification analysis  
+This project applies multiple machine learning techniques—including linear regression, logistic regression, and tree-based models—to predict wages for H-1B-eligible positions. Two main tasks are addressed: (1) **regression**, to predict exact wage values for each application, and (2) **classification**, to group wages into defined salary buckets for comparative analysis. By leveraging a comprehensive dataset of LCA filings from 2020 to 2024, the project aims to uncover patterns in salary levels across job categories, geographic regions, and years of experience.
 
-The H-1B dataset offers a comprehensive look into employment trends, salary standards, and job types across various industries. Building accurate models can:
-
-- Provide insights of job categories and salary for international job seekers and employers  
-- Aligns career planning with realistic salary expectations
+Ultimately, these models can help inform data-driven decision-making for various stakeholders. Accurate wage predictions support regulatory compliance, allow international job seekers to benchmark job offers more effectively, and help detect inconsistencies or outliers in wage reporting that could indicate fraud or data quality issues.
 
 ---
 
 ## Problem Statement
 
-The goal is to perform both **regression** (continuous salary prediction) and **classification** (wage bucket prediction), while overcoming several real-world data challenges:
+The central challenge of this project is to build predictive models for H-1B wages using both regression and classification techniques, while accounting for the complexities inherent in real-world labor data. One key difficulty is **wage inflation over time**, which can distort comparisons across years unless adjusted for economic factors. Additionally, the dataset contains **outliers and inconsistencies** in reported wages—some due to manual entry errors, others due to differences in compensation structures across industries.
 
-- **Wage Inflation Over Time**: Wages shift across years due to inflation and market forces  
-- **Outliers & Reporting Inconsistencies**: Wage anomalies and missing values distort model training  
-- **High-Cardinality Features**: Thousands of unique job titles and worksite locations complicate generalization  
+Another major hurdle is the presence of **high-cardinality features**, such as thousands of unique job titles and geographic identifiers. These can lead to sparse representations and overfitting if not handled properly. Addressing these issues requires thoughtful feature engineering, normalization strategies, and robust model selection.
 
-This dual modeling approach will yield insights that are valuable for stakeholders including job seekers, employers, and policy analysts. 
-
+Despite these challenges, successful modeling of H-1B wage data can provide valuable insights into employment trends and labor market demands, benefitting policymakers, job seekers, and employers alike.
 ---
 
 
