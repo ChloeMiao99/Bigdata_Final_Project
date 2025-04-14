@@ -198,32 +198,23 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 | Random Forest            | 30,739.24 / 30,680.9      | 28,434.47 / 28,468.69   | 27,677.8554 / 27,717.0163  |
 | Gradient-Boosted Trees   | 29,803.27 / 29,763.33     | 27,576.2 / 27,611.71   | 26,960.2027 / 27,041.1945  |
 
-#### Regression After Detrending
+#### Tuning Parameters
+##### Decision Tree Regressor 
+- `maxDepth`: [5, 10]  
 
-| Model                     | RMSE (Test)     |
-|--------------------------|-----------------|
-| Decision Tree            | 31,667.25       |
-| Random Forest            | 31,598.36       |
-| Gradient-Boosted Trees   | **30,632.95**   |
+##### Random Forest Regressor
+- `maxDepth`: [5, 10]  
+- `numTrees`: [20, 50]  
+
+##### Gradient-Boosted Tree Regressor 
+- `maxDepth`: [5, 10]  
+- `maxIter`: [20, 50]  
+
+##### Conclusion
+
+Gradient-boosted Tree (`maxDepth = 10`, `numTrees = 50`) achieved the best predictive performance with a **Testing RMSE of 27,041**, indicating its strong ability to capture complex wage patterns.
 
 ---
-
-### Fine-Tuned Decision Tree
-
-#### Regression (Tuned)
-
-| Metric       | Value      |
-|--------------|------------|
-| RMSE (Train) | 30,794.87  |
-| RMSE (Test)  | 30,857.26  |
-| Best Param   | maxDepth=10 |
-
-#### Classification (Tuned)
-
-| Dataset | Accuracy |
-|---------|----------|
-| Train   | 30.74%   |
-| Test    | 30.59%   |
 
 - Accuracy nearly doubled from the original (16%) baseline.
 - The tuned model captured better decision boundaries and improved generalization.
