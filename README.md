@@ -114,12 +114,9 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 #### Decision Tree & Random Forest
 - Predicted exact wages &  wage range
-- Tuned key hyperparameters
   
 #### Gradient Boosted Tree
 - Predicted exact wages
-- Tuned key hyperparameters
-
 
 ### Optimization & Evaluation
 - Tuned models via **grid search + cross-validation**  
