@@ -255,12 +255,6 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 ---
 
-- Accuracy nearly doubled from the original (16%) baseline.
-- The tuned model captured better decision boundaries and improved generalization.
-
-
----
-
 
 ## Final Reflections
 
