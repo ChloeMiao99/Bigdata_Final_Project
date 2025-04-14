@@ -88,6 +88,40 @@ The task involves both **regression** (predicting numeric wages) and **classific
 - Follow project style guidelines  
 
 ---
+Absolutely! Here's a polished and logically formatted version of your **📆 Timeline & Milestones** section, ready to be added to the README:
+
+---
+
+## 📆 Timeline & Milestones
+
+### ✅ Milestone 1: Project Plan & Data Understanding
+- Outlined project goals, tasks, and evaluation metrics  
+- Described datasets, join logic, and handling of missing values  
+- Applied normalization strategies and explored distributions  
+- Conducted initial exploratory data analysis (EDA), outlier detection, and feature type classification  
+- Defined train/validation/test split strategy to avoid data leakage  
+- **Deliverables**: Data dictionary, planning notebook, team credit assignment plan
+
+---
+
+### ✅ Milestone 2: EDA & Baseline Modeling
+- Completed full-scale EDA and handled missing values  
+- Developed baseline models including linear/logistic regression and tree-based methods  
+- Created and evaluated derived features (e.g., job group, experience)  
+- Justified transformations and visualized key variable relationships  
+- Reported model evaluation metrics on training and test sets  
+- **Deliverables**: Project notebook, 3-minute milestone presentation
+
+---
+
+### ✅ Milestone 3: Feature Engineering & Tuning
+- Engineered key features: `WAGE_DETRENDED`, `WAGE_BUCKET`, and ZIP-based location attributes  
+- Performed grid search and cross-validation for hyperparameter tuning  
+- Compared performance across model families (linear, tree-based, logistic)  
+- Evaluated generalization performance and addressed overfitting concerns  
+- **Deliverables**: Updated modeling notebook, model performance tables
+
+---
 
 ## Setup
 
