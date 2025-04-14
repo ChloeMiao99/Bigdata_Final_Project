@@ -90,6 +90,41 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 ## Approach and Setup
 
+#### 🔍 Feature Engineering
+- Selected core features: `Job_Group`, `yrs_of_experience`, and geographic variables (`STATE`, `COUNTY`, `CITY`, `ZIP`)  
+- Engineered:
+  - `WAGE_DETRENDED`: Inflation-adjusted to 2019  
+  - `WAGE_BUCKET`: Wage bins for classification  
+- Found **ZIP code** to be the strongest location feature  
+- Encoded categoricals with **StringIndexer** and **OneHotEncoder**
+
+---
+
+#### 📊 Data Splitting & Setup
+- Split into **80% training / 20% test** sets  
+- Ensured no data leakage during preprocessing  
+- Used **PySpark MLlib** for pipeline integration
+
+---
+
+### 🤖 Model Development
+
+#### ✅ Linear Regression
+- Predicted exact wages
+  
+#### ✅ Multinomial Logistic Regression
+- Classified wages into buckets  
+
+#### ✅ Tree-Based Models
+- Applied Decision Tree, Random Forest, GBT  
+
+---
+
+### ⚙️ Optimization & Evaluation
+- Tuned models via **grid search + cross-validation**  
+- Evaluated with **R²**, **RMSE**, **MAE** for regression; **Accuracy** for classification  
+- Compared performance across models and feature sets
+
 ---
 
 ## Timeline / Deliverables
