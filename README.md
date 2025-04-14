@@ -257,11 +257,10 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 ---
 
-
 ## Final Reflections
 
 ### Feature Engineering Matters
-- **Detrending and normalization of wages** helped reduce inflation noise and made salaries comparable across years.  
+- **Detrending and normalization of wages** helped reduce inflation noise and made salaries comparable across years. Surprisingly, after applying the detrended data to tree-based models, the classification accuracy nearly doubled, highlighting the value of temporal adjustment in improving predictive performance.
 - **Normalizing detrended wages** led to a substantial improvement in regression performance.  
 - **Categorical mapping** (e.g., `Job_Group`) and **location encoding** (ZIP, city, county, state) added meaningful signal to the models.
 
