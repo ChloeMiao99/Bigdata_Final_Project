@@ -2,26 +2,27 @@
 
 ## Project Overview
 
-This project leverages linear regression, logistic regression, and tree-based models to analyze H-1B visa-eligible job positions in the U.S. It includes two primary machine learning tasks:
+This project leverages multiple machine learning techniques—including linear regression, logistic regression, and tree-based models—to analyze wage patterns for H-1B visa-eligible positions in the U.S. It addresses two core predictive tasks:
 
-- **Regression**: Predict the exact wage value for each application  
-- **Classification**: Predict the salary range by categorizing wages into defined buckets  
+- **Regression**: Predict the exact wage (`WAGE_RATE_OF_PAY_FROM`) for each LCA application  
+- **Classification**: Categorize wages into defined salary buckets for classification analysis  
 
-The H-1B dataset provides detailed information on employment and wage patterns across a broad spectrum of industries and job titles. Accurately modeling these patterns can:
+The H-1B dataset offers a comprehensive look into employment trends, salary standards, and job types across various industries. Building accurate models can:
 
-- Support policy-making and ensure regulatory compliance  
-- Serve as benchmarks for evaluating job offers  
-- Detect anomalies or inconsistencies in reported wage data  
+- Provide insights of job categories and salary for international job seekers and employers  
+- Aligns career planning with realistic salary expectations
 
 ---
 
 ## Problem Statement
 
-The task involves both **regression** (predicting numeric wages) and **classification** (categorizing wages into buckets). Challenges include:
+The goal is to perform both **regression** (continuous salary prediction) and **classification** (wage bucket prediction), while overcoming several real-world data challenges:
 
-- Wage inflation over time  
-- Outliers and reporting inconsistencies  
-- High-cardinality job titles and geographic identifiers  
+- **Wage Inflation Over Time**: Wages shift across years due to inflation and market forces  
+- **Outliers & Reporting Inconsistencies**: Wage anomalies and missing values distort model training  
+- **High-Cardinality Features**: Thousands of unique job titles and worksite locations complicate generalization  
+
+This dual modeling approach will yield insights that are valuable for stakeholders including job seekers, employers, and policy analysts. 
 
 ---
 
