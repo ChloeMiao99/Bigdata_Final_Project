@@ -142,22 +142,12 @@ The task involves both **regression** (predicting numeric wages) and **classific
 - Fork the repo  
 - Create a feature or bugfix branch  
 - Submit a pull request with description and comments  
-- Follow project style guidelines  
 
 ---
 
-## Setup
+## Sample outputs
 
-Install dependencies and run via PySpark:
-
-```bash
-pip install -r requirements.txt
-```
- 
-
----
-
-## Modeling
+### Modeling
 
 ### Linear Regression Results
 
