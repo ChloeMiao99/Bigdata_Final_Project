@@ -88,9 +88,7 @@ The task involves both **regression** (predicting numeric wages) and **classific
 ```
 ├── data/                  # Raw and cleaned datasets
 ├── notebooks/             # Jupyter notebooks for each milestone
-├── models/                # Saved model files and tuning results
 ├── results/               # Evaluation metrics and plots
-├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 ```
 
