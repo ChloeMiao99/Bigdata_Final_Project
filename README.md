@@ -63,37 +63,6 @@ The task involves both **regression** (predicting numeric wages) and **classific
 
 ### Timeline / Deliverables
 
-- **Milestone 3**: Feature engineering + hyperparameter tuning  
-  - Tasks completed:
-    - Created detrended wage and wage bucket features  
-    - Tuned models using grid search with cross-validation  
-    - Evaluated model performance for both regression and classification  
-
-- **Final Deliverable**:
-  - Deploy best-performing models  
-  - Communicate results and business insights  
-  - Submit comprehensive final report  
-
-### Resources
-
-- PySpark MLlib documentation for scalable pipelines  
-- ANOVA and IQR theory for outlier detection and variance analysis  
-- GitHub and Jupyter notebooks for version control and experimentation  
-
-### How to Contribute
-
-- Fork the repo  
-- Create a feature or bugfix branch  
-- Submit a pull request with description and comments  
-- Follow project style guidelines  
-
----
-Absolutely! Here's a polished and logically formatted version of your **📆 Timeline & Milestones** section, ready to be added to the README:
-
----
-
-## 📆 Timeline & Milestones
-
 ### ✅ Milestone 1: Project Plan & Data Understanding
 - Outlined project goals, tasks, and evaluation metrics  
 - Described datasets, join logic, and handling of missing values  
@@ -120,6 +89,21 @@ Absolutely! Here's a polished and logically formatted version of your **📆 Tim
 - Compared performance across model families (linear, tree-based, logistic)  
 - Evaluated generalization performance and addressed overfitting concerns  
 - **Deliverables**: Updated modeling notebook, model performance tables
+
+---
+
+### Resources
+
+- PySpark MLlib documentation for scalable pipelines  
+- ANOVA and IQR theory for outlier detection and variance analysis  
+- GitHub and Jupyter notebooks for version control and experimentation  
+
+### How to Contribute
+
+- Fork the repo  
+- Create a feature or bugfix branch  
+- Submit a pull request with description and comments  
+- Follow project style guidelines  
 
 ---
 
