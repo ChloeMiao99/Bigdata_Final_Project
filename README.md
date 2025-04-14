@@ -113,11 +113,14 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - Predicted exact wages
   
 #### Multinomial Logistic Regression
-- Classified wages into buckets  
+- Classified wages into buckets (Predicted wage range)  
 
-#### Tree-Based Models
-- Applied Decision Tree, Random Forest, GBT  
+#### Decision Tree & Random Forest
+- Predicted exact wages &  wage range
 
+#### Gradient Boosted
+- Predicted exact wages
+  
 ---
 
 ### Optimization & Evaluation
@@ -242,7 +245,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 | Model         | Baseline (Train/Test Accuracy) | Detrended Wage (Train/Test) | Hyperparameter Tuning (Train/Test) |
 |--------------------------|-----------------|-------------|------------|
 | Decision Tree            | 0.16 / 0.16      | 0.29 / 0.29 (DOUBLE！)   | 0.3119 / 0.311  |
-| Random Forest            | 0.15 / 0.15      | 0.28 / 0.28 （DOUBLE!）  | 0.3023 / 0.302  |
+| Random Forest            | 0.15 / 0.15      | 0.28 / 0.28 (DOUBLE!）  | 0.3023 / 0.302  |
 
 #### Tuning Parameters
 ##### Decision Tree Regressor 
