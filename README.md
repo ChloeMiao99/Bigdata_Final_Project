@@ -192,9 +192,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 ### Tree-Based Regression Results
 
-#### Initial Regression (Original Wages)
-
-| Model                     | R² (Train/Test) | RMSE (Test) | MAE (Test) |
+| Model Description        | Baseline (Train/Test RMSE) | Detrended Wage (Train/Test) | Hyperparameter Tuning (Train/Test) |
 |--------------------------|-----------------|-------------|------------|
 | Decision Tree            | 0.22 / 0.22      | 35,626.89   | 27,422.98  |
 | Random Forest            | 0.22 / 0.22      | 35,564.59   | 27,295.29  |
