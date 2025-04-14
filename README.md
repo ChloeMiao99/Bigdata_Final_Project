@@ -143,7 +143,7 @@ spark = SparkSession.builder \
 ### Notebooks Overview
 
 - **`milestone4_Tree.ipynb`**  
-  Run this notebook to replicate the process of **training tree-based models** (Decision Tree, Random Forest, Gradient-Boosted Trees) for both **wage prediction (regression)** and **wage range classification**.
+  Run this notebook to replicate the process of **training tree-based models** for **wage prediction (regression)** and **wage range classification**.
 
 - **`milestone4_EDA_Linear_multinomial.ipynb`**  
   Use this notebook for **exploratory data analysis (EDA)** and to apply **linear regression** for continuous wage prediction and **logistic regression** for wage bucket classification.
