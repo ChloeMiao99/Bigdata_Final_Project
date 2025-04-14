@@ -28,6 +28,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 ### Target Variable
 - `WAGE_RATE_OF_PAY_FROM`: The offered wage rate, used as the target variable for regression and classification tasks.
+![image](https://github.com/user-attachments/assets/714de4ec-cd95-4d0a-a434-698b8907cf94)
 
 
 ### Dataset Structure
