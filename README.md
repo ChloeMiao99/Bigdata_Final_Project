@@ -78,7 +78,6 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 ## Repository Structure
 
 ```
-├── data/                  # Raw and cleaned datasets
 ├── notebooks/             # Jupyter notebooks for each milestone
 ├── results/               # Evaluation metrics and plots
 └── README.md              # Project documentation
