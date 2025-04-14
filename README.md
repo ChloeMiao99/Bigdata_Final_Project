@@ -16,7 +16,7 @@ The central challenge of this project is to build predictive models for H-1B wag
 
 Another major hurdle is the presence of **high-cardinality features**, such as thousands of unique job titles and geographic identifiers. These can lead to sparse representations and overfitting if not handled properly. Addressing these issues requires thoughtful feature engineering, normalization strategies, and robust model selection.
 
-Despite these challenges, successful modeling of H-1B wage data can provide valuable insights into employment trends and labor market demands, benefitting policymakers, job seekers, and employers alike.
+
 ---
 
 
