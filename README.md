@@ -176,7 +176,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 ## Sample outputs
 
-### Modeling
+## Regression Task
 
 ### Linear Regression Results
 
@@ -211,12 +211,11 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 ##### Gradient-Boosted Tree Regressor 
 - `maxDepth`: [5, 10]  
 - `maxIter`: [20, 50]  
-- **Best parameters**: `maxDepth = 10`, `numTrees = 50`  
+- **Best parameters**: `maxDepth = 10`, `maxIter = 50`  
 
 ---
-
+## Classification Task
 ### Multinomial Logistic Regression Results
-
 #### Baseline Performance (Original Wages)
 
 | Model                           | Accuracy (Test) |
@@ -252,10 +251,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 ##### Random Forest Regressor
 - `maxDepth`: [5, 10]  
 - `numTrees`: [20, 50]  
-
-##### Gradient-Boosted Tree Regressor 
-- `maxDepth`: [5, 10]  
-- `maxIter`: [20, 50]  
+- **Best parameters**: `maxDepth = 10`, `numTrees = 50`
 
 ---
 
