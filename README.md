@@ -31,12 +31,10 @@ The task involves both **regression** (predicting numeric wages) and **classific
 **Dataset**: [H-1B LCA Disclosure Data (2020–2024) – Kaggle](https://www.kaggle.com/datasets/zongaobian/h1b-lca-disclosure-data-2020-2024)  
 **Overview**: This dataset contains detailed records of Labor Condition Applications (LCAs) for H-1B visa petitions filed between fiscal years 2020 and 2024. LCAs are essential to the H-1B process, serving as an employer’s attestation to the U.S. Department of Labor regarding wage standards and labor protections for U.S. workers.
 
----
 
 ### Target Variable
 - `WAGE_RATE_OF_PAY_FROM`: The offered wage rate, used as the target variable for regression and classification tasks.
 
----
 
 ### Dataset Structure
 
@@ -68,7 +66,6 @@ The task involves both **regression** (predicting numeric wages) and **classific
 - `H_1B_DEPENDENT`, `WILLFUL_VIOLATOR`, `PUBLIC_DISCLOSURE`  
   *Indicates regulatory compliance and disclosure metrics.*
 
----
 
 ### Feature Engineering
 
@@ -101,9 +98,11 @@ The task involves both **regression** (predicting numeric wages) and **classific
 
 ## Approach and Setup
 
+---
+
 ## Timeline / Deliverables
 
-### ✅ Milestone 1: Project Plan & Data Understanding
+### Milestone 1: Project Plan & Data Understanding
 - Outlined project goals, tasks, and evaluation metrics  
 - Described datasets, join logic, and handling of missing values  
 - Applied normalization strategies and explored distributions  
@@ -113,7 +112,7 @@ The task involves both **regression** (predicting numeric wages) and **classific
 
 ---
 
-### ✅ Milestone 2: EDA & Baseline Modeling
+### Milestone 2: EDA & Baseline Modeling
 - Completed full-scale EDA and handled missing values  
 - Developed baseline models including linear/logistic regression and tree-based methods  
 - Created and evaluated derived features (e.g., job group, experience)  
@@ -123,7 +122,7 @@ The task involves both **regression** (predicting numeric wages) and **classific
 
 ---
 
-### ✅ Milestone 3: Feature Engineering & Tuning
+### Milestone 3: Feature Engineering & Tuning
 - Engineered key features: `WAGE_DETRENDED`, `WAGE_BUCKET`, and ZIP-based location attributes  
 - Performed grid search and cross-validation for hyperparameter tuning  
 - Compared performance across model families (linear, tree-based, logistic)  
@@ -137,6 +136,8 @@ The task involves both **regression** (predicting numeric wages) and **classific
 - PySpark MLlib documentation for scalable pipelines  
 - ANOVA and IQR theory for outlier detection and variance analysis  
 - GitHub and Jupyter notebooks for version control and experimentation  
+
+---
 
 ## How to Contribute
 
@@ -154,16 +155,7 @@ Install dependencies and run via PySpark:
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## Feature Engineering
-
-- **WAGE_DETRENDED**: Normalized wages by job group and year  
-- **Outlier Removal**: IQR-based filtering within job groups  
-- **Categorical Encoding**: Encoded job titles and locations  
-- **yrs_of_experience**: Derived from contract dates  
-- **Filtering**: Removed hourly/monthly wages, kept only annual above $60,000  
+ 
 
 ---
 
