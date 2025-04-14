@@ -274,6 +274,10 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - **Multinomial Logistic Regression** outperformed all tree-based classifiers, achieving the **highest classification accuracy of 37.59%**.  
 - The combination of **normalized detrended wages** and **ZIP code granularity** was the most effective feature set across tasks.
 
+### Successes
+- We dropped RMSE from $30806.11(baseline) to $5198.04(best performance model).
+- We dropped MAE from $27422.98(baseline) to $4015.91(best performance model).
+
 
 
 
