@@ -212,6 +212,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - `maxDepth`: [5, 10]  
 - `maxIter`: [20, 50]  
 - **Best parameters**: `maxDepth = 10`, `maxIter = 50`  
+![image](https://github.com/user-attachments/assets/f0bd1ece-0c33-4a34-9ced-3518bd281a7a)
 
 ---
 ## Classification Task
@@ -252,6 +253,7 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 - `maxDepth`: [5, 10]  
 - `numTrees`: [20, 50]  
 - **Best parameters**: `maxDepth = 10`, `numTrees = 50`
+
 
 ---
 
