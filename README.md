@@ -28,19 +28,59 @@ The task involves both **regression** (predicting numeric wages) and **classific
 
 ## Data Source
 
-- **Dataset**: [H-1B LCA Disclosure Data 2020–2024 (Kaggle)](https://www.kaggle.com/datasets/zongaobian/h1b-lca-disclosure-data-2020-2024)  
-- **Target Variable**: `WAGE_RATE_OF_PAY_FROM`  
-- **Engineered Features**:
-  - `WAGE_DETRENDED`: Inflation-adjusted wages normalized to 2019  
-  - `WAGE_BUCKET`: Binned version for classification tasks  
-  - `Job_Group`: Aggregated SOC titles based on keyword clustering  
-  - `yrs_of_experience`: Derived from `END_DATE - BEGIN_DATE`
-  - `YEAR` (derived from `RECEIVED_DATE`)
-  - Geographic features:
-    - `WORKSITE_STATE`
-    - `WORKSITE_COUNTY`
-    - `WORKSITE_CITY`
-    - `WORKSITE_POSTAL_CODE` (ZIP)
+**Dataset**: [H-1B LCA Disclosure Data (2020–2024) – Kaggle](https://www.kaggle.com/datasets/zongaobian/h1b-lca-disclosure-data-2020-2024)  
+**Overview**: This dataset contains detailed records of Labor Condition Applications (LCAs) for H-1B visa petitions filed between fiscal years 2020 and 2024. LCAs are essential to the H-1B process, serving as an employer’s attestation to the U.S. Department of Labor regarding wage standards and labor protections for U.S. workers.
+
+---
+
+### Target Variable
+- `WAGE_RATE_OF_PAY_FROM`: The offered wage rate, used as the target variable for regression and classification tasks.
+
+---
+
+### Dataset Structure
+
+#### 1. **Case Information**
+- `CASE_NUMBER`, `CASE_STATUS`, `RECEIVED_DATE`, `DECISION_DATE`  
+  *Indicates the status and timeline of each LCA filing.*
+
+#### 2. **Employment Details**
+- `JOB_TITLE`, `SOC_CODE`, `SOC_TITLE`, `FULL_TIME_POSITION`  
+  *Describes the job role, classification, and full-time status.*
+
+#### 3. **Employer Information**
+- `EMPLOYER_NAME`, `EMPLOYER_ADDRESS`, `EMPLOYER_COUNTRY`  
+  *Contains demographic and location-based employer data.*
+
+#### 4. **Wage Information**
+- `WAGE_RATE_OF_PAY_FROM`, `WAGE_RATE_OF_PAY_TO`, `PREVAILING_WAGE`  
+  *Outlines the offered and prevailing wages for the position.*
+
+#### 5. **Legal and Agent Details**
+- `AGENT_REPRESENTING_EMPLOYER`, `AGENT_ATTORNEY_NAME`, `LAWFIRM_NAME_BUSINESS_NAME`  
+  *Provides insights into legal representation during the petition.*
+
+#### 6. **Worksite Information**
+- `WORKSITE_ADDRESS`, `WORKSITE_CITY`, `WORKSITE_STATE`, `WORKSITE_POSTAL_CODE`  
+  *Specifies the intended work location of the H-1B employee.*
+
+#### 7. **Compliance and Conditions**
+- `H_1B_DEPENDENT`, `WILLFUL_VIOLATOR`, `PUBLIC_DISCLOSURE`  
+  *Indicates regulatory compliance and disclosure metrics.*
+
+---
+
+### Feature Engineering
+
+- **`YEAR`**: Extracted from `RECEIVED_DATE` to capture the calendar year of filing.  
+- **`yrs_of_experience`**: Calculated from `END_DATE - BEGIN_DATE` to reflect intended employment duration.  
+- **`Job_Group`**: SOC titles were grouped into broader job families using keyword-based matching (e.g., *Data*, *Healthcare*, *Business & Accounting*).  
+- **`Wage`**: Rows with salaries below $60,000 were removed to comply with H-1B legal wage requirements.  
+- **`WAGE_DETRENDED`**: Wages were normalized to 2019 levels using job group and year-specific inflation multipliers.  
+- **Outlier Removal**: Used the IQR method within each job group to remove extreme wage values after visualizing the distribution.  
+- **`WAGE_BUCKET`**: Created categorical wage tiers from `WAGE_DETRENDED` for classification modeling.
+
+
 
 
 ---
