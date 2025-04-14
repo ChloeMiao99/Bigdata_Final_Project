@@ -6,7 +6,7 @@ The H-1B visa program plays a vital role in enabling highly skilled internationa
 
 This project applies multiple machine learning techniques—including linear regression, logistic regression, and tree-based models—to predict wages for H-1B-eligible positions. Two main tasks are addressed: (1) **regression**, to predict exact wage values for each application, and (2) **classification**, to group wages into defined salary buckets for comparative analysis. By leveraging a comprehensive dataset of LCA filings from 2020 to 2024, the project aims to uncover patterns in salary levels across job categories, geographic regions, and years of experience.
 
-Ultimately, these models can help inform data-driven decision-making for various stakeholders. Accurate wage predictions support regulatory compliance, allow international job seekers to benchmark job offers more effectively, and help detect inconsistencies or outliers in wage reporting that could indicate fraud or data quality issues.
+Ultimately, these models can help inform data-driven decision-making for various stakeholders. Accurate wage predictions support regulatory compliance, allow international job seekers to benchmark job offers more effectively and align career planning with realistic salary expectations.
 
 ---
 
