@@ -194,9 +194,9 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 
 | Model Description        | Baseline (Train/Test RMSE) | Detrended Wage (Train/Test) | Hyperparameter Tuning (Train/Test) |
 |--------------------------|-----------------|-------------|------------|
-| Decision Tree            | 0.22 / 0.22      | 35,626.89   | 27,422.98  |
-| Random Forest            | 0.22 / 0.22      | 35,564.59   | 27,295.29  |
-| Gradient-Boosted Trees   | 0.26 / 0.26      | 34,507.07   | 26,235.76  |
+| Decision Tree            | 30860.31 / 30806.11      | 28571.5 / 28604.1   | 27,422.98  |
+| Random Forest            | 30739.24 / 30680.9      | 35,564.59   | 27,295.29  |
+| Gradient-Boosted Trees   | 29803.27 / 29763.33     | 34,507.07   | 26,235.76  |
 
 #### Regression After Detrending
 
