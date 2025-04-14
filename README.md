@@ -224,8 +224,6 @@ Another major hurdle is the presence of **high-cardinality features**, such as t
 | Model                           | Accuracy (Test) |
 |--------------------------------|------------------|
 | Multinomial Logistic Regression | **34.57%**       |
-| Decision Tree                   | 16%              |
-| Random Forest                   | 15%              |
 
 #### Improved Classification Performance
 
